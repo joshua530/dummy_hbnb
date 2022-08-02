@@ -27,6 +27,10 @@ class HBNBCommand(cmd.Cmd):
         print()
         return True
 
+    def emptyline(self):
+        """Empty line function"""
+        pass
+
     def do_create(self, arg):
         """Creates a new instance"""
         if len(arg) == 0:
@@ -85,7 +89,7 @@ class HBNBCommand(cmd.Cmd):
         # print all objects
         if len(arg) == 0:
             for k, v in storage.all().items():
-                objs.append(v)
+                objs.append(str(v))
         else:
             # print objects from a specific class
             args = split_arg(arg)
@@ -94,7 +98,7 @@ class HBNBCommand(cmd.Cmd):
                 return
             for k, v in storage.all().items():
                 if args[0] in k:
-                    objs.append(v)
+                    objs.append(str(v))
         print(objs)
 
     def do_update(self, arg):
