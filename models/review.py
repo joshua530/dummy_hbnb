@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """Contains review class"""
+from models.base_model import BaseModel
 
 
-class Review:
+class Review(BaseModel):
     """Represents user reviews
 
     Attributes:
