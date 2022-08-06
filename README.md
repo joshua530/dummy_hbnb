@@ -1,4 +1,5 @@
 # AirBnB clone - The console
+![ABNB Logo](./images/hbnb_logo.png)
 
 ## Description
 This is the first version of the airbnb clone. It is comprised of a command line interpreter
@@ -12,7 +13,7 @@ The saved objects can be reloaded once the user logs in to the command line agai
 ### Models
 The parent class is the `BaseModel`. All the other models will extend it.<br>
 Other classes that will be implemented are `Review`, `User`, `Place`, `Amenity`, `PlaceAmenity`, `State` and `City`<br>
-![ER Diagram](er-dig.jpg "entity relationship diagram")
+![ER Diagram](images/er-dig.jpg "entity relationship diagram")
 
 ## Commands
 ---
